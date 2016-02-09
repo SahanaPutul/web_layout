@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<!--
+Developer: Sahana Parvin
+Email    : sahanaparvin99@yahoo.com
+-->
+<html>
+    <head>
+        <title>Web Layout</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .wrapper{
+               width: 100% ;
+               height: auto ;
+               
+            }
+            .wrapper_header{
+                width: 100%;
+                height: 290px;
+                //background: maroon;
+            }
+            .wrapper_header .header{
+                width: 960px;
+                height: 100%;
+                background: #C48659;
+                margin: 0 auto;
+            }
+            .wrapper_header .header .logo{
+                float: left;
+                width: 238px;
+                height: 97%;
+                margin: 5px;
+                background: #AE3009;
+            }
+            .wrapper_header .header .logo img{
+                width: 238px;
+                height: 100%;
+                border-radius: 200px;
+            }
+            .wrapper_header .header .banner{
+                float: left;
+                width: 707px;
+                height: 97%;
+                margin: 5px 5px 5px 0px;
+                background: #cccccc;
+            }
+            .wrapper_header .header .banner img{
+                width: 707px;
+                height: 100%;
+                //color:#660000;
+            }
+            .wrapper_navigation{
+                width: 100%;
+                height:50px;
+                //background: oldlace;
+                
+            }
+            .wrapper_navigation .navigation{
+                width: 960px;
+                height: 100%;
+                margin: 0 auto;
+                background: #BA3C14;
+                    
+            }
+            
+            .wrapper_navigation .navigation ul{
+                float: left;
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                    
+            }
+            .wrapper_navigation .search{
+                float: left;
+                margin-left: 227px;
+                margin-top: 12px;
+            }
+            .wrapper_navigation .navigation ul li{
+                float: left;
+                margin-top: 10px;
+                margin-left: 15px;
+                    
+            }
+            .wrapper_navigation .navigation ul li a{
+                text-decoration: none;
+                font-family: fantasy;
+                //margin: 10px;
+                display:block;
+                background: #C48659;
+                padding:4px 20px; 
+                color: #000;
+                border-radius: 5px 20px;
+                text-transform: uppercase;
+            }
+            .wrapper_navigation .navigation ul li a:hover{
+                color: #000000;
+                border-radius: 20px 5px;
+               // padding: 50px 80px;
+            }
+            .wrapper_content{
+                width: 100%;
+                height:700px;
+                margin: 0 auto;
+                //background: oldlace;
+            }
+            .wrapper_content .content{
+                width: 960px;
+                height: 100%;
+                margin: 0 auto;
+                background: #C48659;
+            }
+            .wrapper_content .content .content_left{
+                float: left;
+                width: 469px;
+                height: 98%;
+                //margin: 0 auto;
+                background: #E67941;
+                padding: 2px;
+                margin-top: 5px;
+                margin-left: 5px;
+            }
+            .wrapper_content .content .content_left img{
+                width: 469px;
+                //height: 80%;
+                alignment-adjust: central;
+                margin-right: 5px;
+                
+            }
+            .wrapper_content .content .content_left p{
+                //alignment-adjust: central;
+                text-align: justify;
+                padding: 5px;
+            }
+            .wrapper_content .content .content_right{
+                float: left;
+                width: 469px;
+                height: 98%;
+                //margin: 0 auto;
+                background: #E67941;
+                padding: 2px;
+                margin-top: 5px;
+                margin-left: 5px;
+            }
+            .wrapper_content .content .content_right img{
+                width: 469px;
+                height: 45.5%;
+                //height: 339px;
+                alignment-adjust: central;
+                
+            }
+            .wrapper_content .content .content_right p{
+                //alignment-adjust: central;
+                text-align: justify;
+                padding: 5px;
+            }
+            
+            .wrapper_footer{
+                width: 960px;
+                height:150px;
+                background: #C48659;
+                margin: 0 auto;
+            }
+            .wrapper_footer .footer{
+                width: 949px;
+                height: 93%;
+                margin: 0 auto;
+                background: #BA3C14;
+                //margin: 5px;
+                margin: 0 auto;
+                padding: 5px;
+                
+            }
+            .wrapper_footer .footer .media{
+                margin-left: 400px;
+            }
+            .wrapper_footer .footer .media a{
+                color: darkblue;
+            }
+            //.wrapper_footer .footer .media p{
+            //    text-decoration: underline;
+            //}
+            .wrapper_footer .footer .copyright{
+              float: left;  
+              margin-top: 37px;
+              margin-left: 5px;
+            }
+            .wrapper_footer .footer .copyright p{
+              text-align: justify; 
+            }
+            .wrapper_footer .footer .copyright a{
+              color: black; 
+            }
+            .wrapper_footer .footer .design_by{
+              margin-top: 70px;
+              margin-left: 128px;
+            }
+            .wrapper_footer .footer .design_by p{
+              //color: black; 
+              margin-left: 653px;
+              //margin-top: 16px;
+              
+            }
+            .wrapper_footer .footer .design_by a{
+              color: black; 
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="wrapper_header">
+                <div class="header">
+                    <div class="logo">
+                      <a href="#"><img src="images/Logo.jpg" alt="logo"></a>
+                    </div>
+                    <div class="banner">
+                        <img src="images/banner.jpg" alt="Banner">  
+                    </div>
+                </div>
+            </div> 
+            <div class="wrapper_navigation">
+                <div class="navigation">
+                    <ul>
+                        <li><a href="#"><b>Home</b></a></li> 
+                        <li><a href="#"><b>About</b></a></li>
+                        <li><a href="#"><b>Contact</b></a></li>
+                        <li><a href="#"><b>Videos</b></a></li>
+                        <li><a href="#"><b>Others</b></a></li>
+                    </ul>
+                    <div class="search">
+                    <input type="search" name="search" placeholder="search">
+                    </div>
+                </div>
+                
+            </div> 
+            <div class="wrapper_content">
+                <div class="content">
+                    <div class="content_left">
+                        <img src="images/download.jpg" alt="books">
+                        
+                        <p>This is a web layout.This is a web layout.This is a web layout.This is a web layout.
+                            This is a web layout.This is a web layout.This is a web layout.This is a web layout.</p> 
+                        <p><b>A youtube video about books</b></p>
+                        <iframe width="469" src="https://www.youtube.com/embed/J11P9Xdsi_g" frameborder="0" allowfullscreen></iframe>
+                        
+                    </div>
+                    <div class="content_right">
+                        <img src="images/slide2.jpg" alt="books">
+                        <p>This is a web layout.This is a web layout.This is a web layout.This is a web layout.
+                            This is a web layout.This is a web layout.This is a web layout.This is a web layout.</p>  
+                        <p><b>Want to find us?</b></p>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d116834.13669278496!2d90.4193257!3d23.7806365!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1448880219380" width="469" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        
+                    </div>
+                </div>
+            </div> 
+            <div class="wrapper_footer">
+                <div class="footer">
+                    <div class="media">
+                        <p><u><a href="#">Facebook</a></u>|<u><a href="#">Twiter</a></u>|<u><a href="#">Google+</a></u></p>
+                    </div>
+                    <div class="copyright">
+                        <p>Copyright@<a href="#" target="blank">Coderstrust</a></p> 
+                    </div>
+                    <div class="design_by">
+                        <p>Design By<a href="#" target="blank">Sahana Parvin</a></p>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </body>
+</html>
